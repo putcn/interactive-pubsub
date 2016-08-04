@@ -1,0 +1,23 @@
+{
+  "name": "interactive-pubsub",
+  "version": "1.0.0",
+  "description": "An interactive pubsub event system",
+  "main": "ips.node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/putcn/interactive-pubsub.git"
+  },
+  "keywords": [
+    "pubsub",
+    "event"
+  ],
+  "author": "Darcy Chen (putcn@github)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/putcn/interactive-pubsub/issues"
+  },
+  "homepage": "https://github.com/putcn/interactive-pubsub#readme"
+}
