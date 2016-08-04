@@ -20,7 +20,9 @@ ips.pub("viewSwitch", data)
 
 //in the form component
 ips.sub("viewSwitch", "before", function(data, deferred){
-    this.
+    this.verifyForm().then(deferred.resolve, deferred.reject);
     return deferred.promise();
 }, this);
 ```
+`before` means this is executed before "viewSwitch" logic. a `after` event will be published when viewSwitch logic is done, but in the subscription, you can't veto this action.
+Also in code above, please notice `this.verfyForm` can be either a sync or async function. if the verification failed, the view switch logic will NOT run.
